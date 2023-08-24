@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wren- Persnol blog Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fd2e093c1e.js" crossorigin="anonymous"></script>
+
+
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap");
+
+    :root {
+        font-family: 'Manrope', sans-serif;
+    }
+
+    #check:checked~ul {
+        left: 0;
+        transition: all 0.5s;
+    }
+
+
+    .h1::after {
+        content: "";
+        display: block;
+        width: 96px;
+        height: 3px;
+        background: linear-gradient(cyan, blue);
+        margin-block-start: 10px;
+
+    }
+
+    .fa-user,
+    .fa-envelope::before {
+        position: absolute;
+        left: 0;
+        top: 21px;
+    }
+</style>
+
+
+<body class=" bg-[#0F1729]">
+
+    <!-- nav -->
+    <header class="bg-[#0d1529] p-7">
+        <nav class="flex items-center h-auto w-full justify-between lg:p-[0_62px] xl:p-[0_70px] ">
+            <div class="logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <button
+                class="hidden text-white sm:inline-block bg-gradient-to-r from-cyan-500 to-blue-500 px-[38px]  rounded-md hover:from-blue-500 hover:to-cyan-500 transition-colors ease-in duration-500 sm:p-[4px_17px] sm:ml-[50%] md:hidden">Subscribe</button>
+            <label for="check" class="hidden">toogle</label>
+            <label for="check" class="float-right md:hidden text-2xl"> <i
+                    class="fa-solid fa-bars text-white cursor-pointer"></i></label>
+            <input type="checkbox" id="check" class="hidden">
+
+
+            <ul class="text-white absolute w-[100%] h-[21rem] top-[89px] left-[-100%] text-center leading-[50px] duration-300  tarnsition-all bg-[#111a30] border-[#798CAA] border-t-[1px] z-10
+            sm:flex sm:justify-evenly sm:h-auto sm:border-none
+            md:hidden">
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] hover:pl-[4px] transition-all">Home</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] hover:pl-[4px] transition-all ">Topics</a>
+                </li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] hover:pl-[4px] transition-all">Featured
+                        Post</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] hover:pl-[4px] transition-all">Recent
+                        Post</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] hover:pl-[4px] transition-all">Conatct</a>
+                </li>
+                <li><button
+                        class="bg-gradient-to-r from-cyan-500 to-blue-500 px-[38px]  rounded-md hover:from-blue-500 hover:to-cyan-500 transition-colors ease-in duration-500 sm:hidden">Subscribe</button>
+                </li>
+
+            </ul>
+
+            <ul class="hidden md:flex md:space-x-6 text-white md:items-center">
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] lg:text-[18px] sm:text-[15px]">Home</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] lg:text-[18px] sm:text-[15px]">Topics</a>
+                </li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] lg:text-[18px] sm:text-[15px]">Featured
+                        Post</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] lg:text-[18px] sm:text-[15px]">Recent
+                        Post</a></li>
+                <li><a href="#" class="text-[#D8E6FB] hover:text-[#82a5da] lg:text-[18px] sm:text-[15px]">Conatct</a>
+                </li>
+                <li><button
+                        class="bg-gradient-to-r from-cyan-500 to-blue-500 px-[38px]  rounded-md hover:from-blue-500 hover:to-cyan-500 transition-colors ease-in duration-500 md:px-[12px] md:py-[5px]">Subscribe</button>
+                </li>
+            </ul>
+
+
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section class="text-white lg:grid lg:grid-cols-2 lg:m-[0_51px]">
+        <div>
+            <div class="p-5 mt-[92px] sm:p-[32px_11%]">
+                <p class="text-[#798CAA] text  font-bold">Hello Everyone!</p>
+                <h1 class="font-extrabold text-4xl my-5 sm:text-5xl">
+                    I’ m <span class="bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text">Wren
+                        Clark</span>
+                </h1>
+                <p class="text-[#798CAA] mb-[26px]">I use animation as a third dimension by which to simplify
+                    experiences
+                    and kuiding
+                    thro each and every interaction. I’m not adding motion just to spruce things up, but doing it in
+                    ways
+                    that.</p>
+            </div>
+            <div
+                class="h-[300px] w-[100px] bg-cyan-400 absolute blur-[70px] opacity-30 rounded-full rotate-[-45deg] top-[12rem]">
+            </div>
+            <div class="sm:w-[78%] sm:m-auto">
+                <form action="#" class="w-[90%] p-3 border-blue-400 text-[15px] border-[1px] rounded-lg m-auto flex justify-between hover:shadow-sm transition  duration-200 focus:shadow-sm
+             sm:w-[64%] sm:ml-0 lg:w-[82%] hover:scale-[101%] hover:shadow-blue-500 ">
+                    <input type="email" placeholder="Type your Email Address"
+                        class="relative outline-none bg-transparent px-2 text-[14px] w-[60%]">
+                    <button type="button"
+                        class="bg-gradient-to-r from-cyan-500 to-blue-500  rounded-md hover:from-blue-500 hover:to-cyan-500 transition ease-in duration-300   p-[4px_20px]  md:px-[12px] md:py-[5px]">Subscribe</button>
+
+                </form>
+            </div>
+        </div>
+        <figure>
+            <img src="./images/hero-banner.png" alt="#hero" class="mx-auto mt-[35px]">
+        </figure>
+
+    </section>
+
+    <!-- hot topic -->
+    <section class="hot-topics px-[7%] text-white ">
+        <div
+            class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[7%] rounded-xl sm:w-[87%] sm:m-auto sm:p-[4%] lg:flex lg:items-center lg:w-[100%] lg:p-[2%] lg:gap-[12px] hover:scale-y-[102%] transition-all duration-300 ">
+            <div>
+                <h1 class="text-[#BAE1F2] text-xl">Hot topics</h1>
+                <p class="text-[#7587A5] text-[13px]">Don't miss out on the latest news about Travel tips, Hotels
+                    review, Food guide...</p>
+            </div>
+            <div class="flex">
+                <div class="cursor-pointer">
+                    <img src="./images/topic-1.png" alt="" class="rounded-xl opacity-70 my-[20px] sm:mb-[0px]">
+                    <div class="">
+                        <h1 class="hover:text-blue-400">Sports</h1>
+                        <p class="text-[12px] text-[#7587A5]">38 Article</p>
+                    </div>
+
+                </div>
+                <div class="hidden cursor-pointer sm:inline-block sm:mx-[4%]">
+                    <img src="./images/topic-2.png" alt="" class="rounded-xl opacity-70 my-[20px] sm:mb-[0px]">
+                    <div class="">
+                        <h1 class="hover:text-blue-400">Travel</h1>
+                        <p class="text-[12px] text-[#7587A5]">64 Article</p>
+                    </div>
+
+                </div>
+                <div class=" hidden cursor-pointer sm:inline-block">
+                    <img src="./images/topic-3.png" alt="" class="rounded-xl opacity-70 my-[20px] sm:mb-[0px]">
+                    <div class="">
+                        <h1 class="hover:text-blue-400 transition-all ease-out duration-500">Design</h1>
+                        <p class="text-[12px] text-[#7587A5]">78 Article</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- editar picked -->
+    <section class="editor-picked px-[7%] sm:px-[14%] md:px-[7%] mt-[60px]">
+        <div class="">
+            <div class="my-[35px]">
+                <h1
+                    class="bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text text-2xl font-bold lg:text-3xl">
+                    Editor's picked</h1>
+                <p class="text-[#7587A5] mt-[5px]">Featured and highly rated articles</p>
+            </div>
+            <div class="lg:flex lg:flex-wrap lg:justify-between">
+                <div
+                    class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl mb-[25px]  hover:scale-y-[102%] hover:origin-bottom  transition-all duration-300 lg:w-[48%] md:p-[3%] lg:p-[2%]">
+                    <div>
+                        <img src="./images/featured-1.png" alt="" class="rounded-xl">
+                        <div>
+                            <div class="text-[14px] flex justify-between my-[15px]">
+                                <p class="text-[#7587A5] cursor-pointer hover:text-blue-400">#Travel #Lifestyle</p>
+                                <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min read
+                                </p>
+                            </div>
+                            <h1
+                                class="text-[#BAE1F2] text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all duration-400">
+                                Self-observation is the first steps of inner unfloding </h1>
+                            <div class="text-[#7587A5] flex justify-between text-[15px] items-center mt-[15px]">
+                                <div class="flex gap-[10px]">
+                                    <img src="./images/author-2.png" alt="" class="rounded-full w-[18%]">
+                                    <div class="mr-">
+                                        <p>Joseph</p>
+                                        <p>25 Nov 2022</p>
+                                    </div>
+                                </div>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl mb-[25px] hover:scale-y-[102%] hover:origin-bottom transition-all duration-300 lg:w-[48%] md:p-[3%] lg:p-[2%] ">
+                    <div>
+                        <img src="./images/featured-2.png" alt="" class="rounded-xl">
+                        <div>
+                            <div class="text-[14px] flex justify-between my-[15px]">
+                                <p class="text-[#7587A5] cursor-pointer hover:text-blue-400">#Design #Movie</p>
+                                <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min read
+                                </p>
+                            </div>
+                            <h1
+                                class="text-[#BAE1F2] text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all duration-400">
+                                Self-observation is the first steps of inner unfloding </h1>
+                            <div class="text-[#7587A5] flex justify-between text-[15px] items-center mt-[15px]">
+                                <div class="flex gap-[10px]">
+                                    <img src="./images/author-2.png" alt="" class="rounded-full w-[18%]">
+                                    <div class="mr-">
+                                        <p>Joseph</p>
+                                        <p>25 Nov 2022</p>
+                                    </div>
+                                </div>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl mb-[25px] hover:scale-y-[102%] hover:origin-bottom transition-all duration-300 lg:w-[31%] md:p-[3%] lg:p-[2%]">
+                    <div>
+                        <img src="./images/featured-3.png" alt="" class="rounded-xl">
+                        <div>
+                            <div class="text-[14px] flex justify-between my-[15px]">
+                                <p class="text-[#7587A5] cursor-pointer hover:text-blue-400">#Design #Movie</p>
+                                <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min read
+                                </p>
+                            </div>
+                            <h1
+                                class="text-[#BAE1F2] text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all duration-400">
+                                Self-observation is the first steps of inner unfloding </h1>
+                            <div class="text-[#7587A5] flex justify-between text-[15px] items-center mt-[15px]">
+                                <div class="flex gap-[10px]">
+                                    <img src="./images/author-2.png" alt="" class="rounded-full w-[18%]">
+                                    <div class="mr-">
+                                        <p>Joseph</p>
+                                        <p>25 Nov 2022</p>
+                                    </div>
+                                </div>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl mb-[25px] hover:scale-y-[102%] hover:origin-bottom transition-all  duration-300 lg:w-[31%] md:p-[3%] lg:p-[2%]">
+                    <div>
+                        <img src="./images/featured-4.png" alt="" class="rounded-xl">
+                        <div>
+                            <div class="text-[14px] flex justify-between my-[15px]">
+                                <p class="text-[#7587A5] cursor-pointer hover:text-blue-400">#Design #Movie</p>
+                                <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min read
+                                </p>
+                            </div>
+                            <h1
+                                class="text-[#BAE1F2] text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all duration-400">
+                                Self-observation is the first steps of inner unfloding </h1>
+                            <div class="text-[#7587A5] flex justify-between text-[15px] items-center mt-[15px]">
+                                <div class="flex gap-[10px]">
+                                    <img src="./images/author-2.png" alt="" class="rounded-full w-[18%]">
+                                    <div class="mr-">
+                                        <p>Joseph</p>
+                                        <p>25 Nov 2022</p>
+                                    </div>
+                                </div>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class=" bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl mb-[25px] hover:scale-y-[102%] hover:origin-bottom transition-all  duration-300 lg:w-[31%] md:p-[3%] lg:p-[2%]">
+                    <div>
+                        <img src="./images/featured-5.png" alt="" class="rounded-xl">
+                        <div>
+                            <div class="text-[14px] flex justify-between my-[15px]">
+                                <p class="text-[#7587A5] cursor-pointer hover:text-blue-400">#Design #Movie</p>
+                                <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min read
+                                </p>
+                            </div>
+                            <h1
+                                class="text-[#BAE1F2] text-2xl font-bold cursor-pointer hover:text-blue-400 transition-all duration-400">
+                                Self-observation is the first steps of inner unfloding </h1>
+                            <div class="text-[#7587A5] flex justify-between text-[15px] items-center mt-[15px]">
+                                <div class="flex gap-[10px]">
+                                    <img src="./images/author-2.png" alt="" class="rounded-full w-[18%]">
+                                    <div class="mr-">
+                                        <p>Joseph</p>
+                                        <p>25 Nov 2022</p>
+                                    </div>
+                                </div>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tags -->
+    <section class="tags px-[7%] sm:px-[14%] md:px-[7%]">
+        <div>
+            <div class="my-[45px]">
+                <h1
+                    class="bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text text-2xl font-bold lg:text-3xl">
+                    Popular Tags
+                </h1>
+                <p class="text-[#7587A5] mt-[5px]">Most searched keywords...</p>
+                <div
+                    class="text-[#6d7685] my-[30px] grid grid-cols-2 gap-6  sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag1.png" alt="">
+                            <p>Travel</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag2.png" alt="">
+                            <p>Culture</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag3.png" alt="">
+                            <p>Life Style</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag4.png" alt="">
+                            <p>Fashion</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag5.png" alt="">
+                            <p>Food</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag6.png" alt="">
+                            <p>Space</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag7.png" alt="">
+                            <p>Animal</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag8.png" alt="">
+                            <p>Minimal</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag9.png" alt="">
+                            <p>Interior</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag10.png" alt="">
+                            <p>Plant</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag11.png" alt="">
+                            <p>Nature</p>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[9%] text-[14px] sm:text-[16px] rounded-xl cursor-pointer hover:scale-[101%] transition-all duration-300 hover:shadow-sm hover:shadow-cyan-400/50 active:shadow-blue-500 ">
+                        <div class="flex items-center gap-[11px]">
+                            <img src="./images/tag12.png" alt="">
+                            <p>Buisness</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recents posts -->
+    <section class="posts px-[7%] sm:px-[14%] md:px-[7%]">
+
+        <div class="my-[45px] lg:grid lg:grid-cols-[60%_auto] gap-4">
+            <!-- Recent posts -->
+            <div>
+                <div>
+                    <h1
+                        class=" bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text text-2xl font-bold lg:text-3xl">
+                        Recent Posts
+                    </h1>
+
+                    <p class="text-[#7587A5] mt-[5px]">Don't miss the latest trends</p>
+                </div>
+
+                <div class="my-[40px]">
+                    <div class="grid gap-6 sm:grid-cols-[30%_auto] md:grid-cols-[40%_auto]">
+                        <figure>
+                            <img src="./images/recent-post-1.jpg" alt=""
+                                class="w-[100%] rounded-xl hover:-translate-y-1 transition-all duration-500 ">
+                        </figure>
+                        <div class="">
+                            <a href="#"
+                                class="text-white font-bold text-sm bg-[#131B30] p-3 rounded-full hover:bg-blue-600 hover:shadow-md active:ring-2 active:ring-blue-800  hover:shadow-blue-400 transition-all duration-300">Working
+                                Tips</a>
+                            <h1
+                                class="text-[#BAE1F2] font-bold text-xl cursor-pointer mt-[20px] mb-[25px] hover:text-blue-400 transition-all duration-400 sm:text-2xl lg:text-[28px]">
+                                Helpful Tips for Working from Homes as a freeancer</h1>
+                            <p class="text-[#7587A5] text-sm">Gosh jaguar ostrich quail one excited dear hello and bound
+                                and
+                                the and bland moral misheard
+                                roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                            <div class="text-[#7587A5] flex justify-between my-4">
+                                <div class="space-x-3">
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Travel</a>
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Life-style</a>
+                                </div>
+                                <div>
+                                    <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min
+                                        read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-[40px]">
+                    <div class="grid gap-6 sm:grid-cols-[30%_auto] md:grid-cols-[40%_auto]">
+                        <figure>
+                            <img src="./images/recent-post-2.jpg" alt=""
+                                class="w-[100%] rounded-xl hover:-translate-y-1 transition-all duration-500 ">
+                        </figure>
+                        <div class="">
+                            <a href="#"
+                                class="text-white font-bold text-sm bg-[#131B30] p-3 rounded-full hover:bg-blue-600 hover:shadow-md active:ring-2 active:ring-blue-800  hover:shadow-blue-400 transition-all duration-300">Working
+                                Tips</a>
+                            <h1
+                                class="text-[#BAE1F2] font-bold text-xl cursor-pointer mt-[20px] mb-[25px] hover:text-blue-400 transition-all duration-400 sm:text-2xl">
+                                Helpful Tips for Working from Homes as a freeancer</h1>
+                            <p class="text-[#7587A5] text-sm">Gosh jaguar ostrich quail one excited dear hello and bound
+                                and
+                                the and bland moral misheard
+                                roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                            <div class="text-[#7587A5] flex justify-between my-4">
+                                <div class="space-x-3">
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Travel</a>
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Life-style</a>
+                                </div>
+                                <div>
+                                    <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min
+                                        read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-[40px]">
+                    <div class="grid gap-6 sm:grid-cols-[30%_auto] md:grid-cols-[40%_auto]">
+                        <figure>
+                            <img src="./images/recent-post-3.jpg" alt=""
+                                class="w-[100%] rounded-xl hover:-translate-y-1 transition-all duration-500 ">
+                        </figure>
+                        <div class="">
+                            <a href="#"
+                                class="text-white font-bold text-sm bg-[#131B30] p-3 rounded-full hover:bg-blue-600 hover:shadow-md active:ring-2 active:ring-blue-800  hover:shadow-blue-400 transition-all duration-300">Working
+                                Tips</a>
+                            <h1
+                                class="text-[#BAE1F2] font-bold text-xl cursor-pointer mt-[20px] mb-[25px] hover:text-blue-400 transition-all duration-400 sm:text-2xl">
+                                Helpful Tips for Working from Homes as a freeancer</h1>
+                            <p class="text-[#7587A5] text-sm">Gosh jaguar ostrich quail one excited dear hello and bound
+                                and
+                                the and bland moral misheard
+                                roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                            <div class="text-[#7587A5] flex justify-between my-4">
+                                <div class="space-x-3">
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Travel</a>
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Life-style</a>
+                                </div>
+                                <div>
+                                    <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min
+                                        read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-[40px]">
+                    <div class="grid gap-6 sm:grid-cols-[30%_auto] md:grid-cols-[40%_auto]">
+                        <figure>
+                            <img src="./images/recent-post-4.jpg" alt=""
+                                class="w-[100%] rounded-xl hover:-translate-y-1 transition-all duration-500 ">
+                        </figure>
+                        <div class="">
+                            <a href="#"
+                                class="text-white font-bold text-sm bg-[#131B30] p-3 rounded-full hover:bg-blue-600 hover:shadow-md active:ring-2 active:ring-blue-800  hover:shadow-blue-400 transition-all duration-300">Working
+                                Tips</a>
+                            <h1
+                                class="text-[#BAE1F2] font-bold text-xl cursor-pointer mt-[20px] mb-[25px] hover:text-blue-400 transition-all duration-400 sm:text-2xl">
+                                Helpful Tips for Working from Homes as a freeancer</h1>
+                            <p class="text-[#7587A5] text-sm">Gosh jaguar ostrich quail one excited dear hello and bound
+                                and
+                                the and bland moral misheard
+                                roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                            <div class="text-[#7587A5] flex justify-between my-4">
+                                <div class="space-x-3">
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Travel</a>
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Life-style</a>
+                                </div>
+                                <div>
+                                    <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min
+                                        read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-[40px]">
+                    <div class="grid gap-6 sm:grid-cols-[30%_auto] md:grid-cols-[40%_auto]">
+                        <figure>
+                            <img src="./images/recent-post-5.jpg" alt=""
+                                class="w-[100%] rounded-xl hover:-translate-y-1 transition-all duration-500 ">
+                        </figure>
+                        <div class="">
+                            <a href="#"
+                                class="text-white font-bold text-sm bg-[#131B30] p-3 rounded-full hover:bg-blue-600 hover:shadow-md active:ring-2 active:ring-blue-800  hover:shadow-blue-400 transition-all duration-300">Working
+                                Tips</a>
+                            <h1
+                                class="text-[#BAE1F2] font-bold text-xl cursor-pointer mt-[20px] mb-[25px] hover:text-blue-400 transition-all duration-400 sm:text-2xl">
+                                Helpful Tips for Working from Homes as a freeancer</h1>
+                            <p class="text-[#7587A5] text-sm">Gosh jaguar ostrich quail one excited dear hello and bound
+                                and
+                                the and bland moral misheard
+                                roadrunner flapped lynx far that and jeepers giggled far and far</p>
+                            <div class="text-[#7587A5] flex justify-between my-4">
+                                <div class="space-x-3">
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Travel</a>
+                                    <a href="#" class="hover:text-blue-500 transition-all duration-300">#Life-style</a>
+                                </div>
+                                <div>
+                                    <p class="text-[#7587A5]"><span><i class="fa-regular fa-clock"></i></span> 3 min
+                                        read
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="text-[#d0d9e7] flex gap-3 mb-[30px]">
+                    <div
+                        class="px-4 py-3 sm:px-5 Sm:py-4 text-[15px] rounded-full bg-[#131B30] hover:bg-blue-400 cursor-pointer transtion-all duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-arrow-left " class="50px"></i>
+                    </div>
+                    <div
+                        class="px-5 py-3 sm:px-6 sm:py-4 text-[15px] rounded-full bg-[#131B30] hover:bg-blue-400 cursor-pointer transtion-all duration-300 hover:-translate-y-1">
+                        1
+                    </div>
+                    <div
+                        class="px-[20px] py-3 sm:px-[22px] sm:py-4 text-[15px] rounded-full bg-[#131B30] hover:bg-blue-400 cursor-pointer transtion-all duration-300 hover:-translate-y-1">
+                        2
+                    </div>
+                    <div
+                        class="px-4 py-3  sm:px-5 Sm:py-4 rounded-full text-[15px] bg-[#131B30] hover:bg-blue-400 cursor-pointer transtion-all duration-300 hover:-translate-y-1">
+                        ...
+                    </div>
+                    <div
+                        class="px-4 py-3 sm:px-5 Sm:py-4 rounded-full text-[15px] selection:none bg-[#131B30] hover:bg-blue-400 cursor-pointer transtion-all duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </div>
+
+
+                </nav>
+
+            </div>
+
+
+
+            <!-- popular posts -->
+            <div class="popular-posts">
+                <div class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl">
+                    <h1
+                        class="h1 bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text text-2xl font-bold lg:text-3xl">
+                        Popular Posts
+                    </h1>
+                    <div class="flex gap-4 mt-[25px]">
+                        <figure>
+                            <img src="./images/popular-post-1.jpg" alt="" class="rounded-full">
+                        </figure>
+                        <div class="border-b-[1px] border-[#28375e]">
+                            <a href="#"
+                                class="text-[#c2eeea] hover:text-blue-400 transition-all duration-300 text-lg font-bold leading-[20px]">Creating
+                                is a privilege but it's also a gift</a>
+                            <div class="flex gap-4 text-[15px] mt-2 mb-4">
+                                <p class="text-[#7587A5]">15 mins read</p>
+                                <p class="text-[#7587A5]">15 April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-[25px]">
+                        <figure>
+                            <img src="./images/popular-post-2.jpg" alt="" class="rounded-full">
+                        </figure>
+                        <div class="border-b-[1px] border-[#28375e]">
+                            <a href="#"
+                                class="text-[#c2eeea] hover:text-blue-400 transition-all duration-300 text-lg font-bold leading-[20px]">Being
+                                unique is better than being perfect</a>
+                            <div class="flex gap-4 text-[15px] mt-2 mb-4">
+                                <p class="text-[#7587A5]">15 mins read</p>
+                                <p class="text-[#7587A5]">15 April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-[25px]">
+                        <figure>
+                            <img src="./images/popular-post-3.jpg" alt="" class="rounded-full">
+                        </figure>
+                        <div class="border-b-[1px] border-[#28375e]">
+                            <a href="#"
+                                class="text-[#c2eeea] hover:text-blue-400 transition-all duration-300 text-lg font-bold leading-[20px]">Every
+                                day, in every city and town across the country</a>
+                            <div class="flex gap-4 text-[15px] mt-2 mb-4">
+                                <p class="text-[#7587A5]">15 mins read</p>
+                                <p class="text-[#7587A5]">15 April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-[25px]">
+                        <figure>
+                            <img src="./images/popular-post-4.jpg" alt="" class="rounded-full">
+                        </figure>
+                        <div class="border-b-[1px] border-[#28375e]">
+                            <a href="#"
+                                class="text-[#c2eeea] hover:text-blue-400 transition-all duration-300 text-lg font-bold leading-[20px]">Your
+                                voice, your mind, your story, your vision</a>
+                            <div class="flex gap-4 text-[15px] mt-2 mb-4">
+                                <p class="text-[#7587A5]">15 mins read</p>
+                                <p class="text-[#7587A5]">15 April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-[25px]">
+                        <figure>
+                            <img src="./images/popular-post-1.jpg" alt="" class="rounded-full">
+                        </figure>
+                        <div class="border-b-[1px] border-[#28375e]">
+                            <a href="#"
+                                class="text-[#c2eeea] hover:text-blue-400 transition-all duration-300 text-lg font-bold leading-[20px]">Being
+                                unique is better than being perfect</a>
+                            <div class="flex gap-4 text-[15px] mt-2 mb-4">
+                                <p class="text-[#7587A5]">15 mins read</p>
+                                <p class="text-[#7587A5]">15 April 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl my-[30px]">
+                    <h1
+                        class=" h1 bg-gradient-to-l to-[#0BD1D1] from-[#0DA9E7] text-transparent bg-clip-text text-2xl font-bold lg:text-3xl">
+                        Last comment
+                    </h1>
+                    <div class="my-[15px] border-b-[1px] border-[#28375e]">
+                        <h1 class="text-[#7587A5] lg:text-[15px] lg:leading-[18px]">“ Gosh jaguar ostrich quail one
+                            excited dear hello and bound and the and bland moral
+                            misheard roadrunner “</h1>
+                        <div class="flex gap-5 items-center my-[23px]">
+                            <figure class="w-[9%]">
+                                <img src="./images/author-6.png" alt="" class="rounded-full">
+                            </figure>
+                            <div>
+                                <p class="text-[#586479] text-[14px]">jane cooper</p>
+                                <p class="text-[#586479] text-[14px]">15 April 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-[15px] border-b-[1px] border-[#28375e]">
+                        <h1 class="text-[#7587A5] lg:text-[15px] lg:leading-[18px]">“ Gosh jaguar ostrich quail one
+                            excited dear hello and bound and the and bland moral
+                            misheard roadrunner “</h1>
+                        <div class="flex gap-5 items-center my-[23px]">
+                            <figure class="w-[9%]">
+                                <img src="./images/author-7.png" alt="" class="rounded-full">
+                            </figure>
+                            <div>
+                                <p class="text-[#586479] text-[14px]">jane cooper</p>
+                                <p class="text-[#586479] text-[14px]">15 April 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-[15px] border-b-[1px] border-[#28375e]">
+                        <h1 class="text-[#7587A5] lg:text-[15px] lg:leading-[18px]">“ Gosh jaguar ostrich quail one
+                            excited dear hello and bound and the and bland moral
+                            misheard roadrunner “</h1>
+                        <div class="flex gap-5 items-center my-[23px]">
+                            <figure class="w-[9%]">
+                                <img src="./images/author-8.png" alt="" class="rounded-full">
+                            </figure>
+                            <div>
+                                <p class="text-[#586479] text-[14px]">jane cooper</p>
+                                <p class="text-[#586479] text-[14px]">15 April 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-xl my-[30px]">
+                    <div>
+                        <div class="logo">
+                            <img src="./images/logo.svg" alt="">
+                            <p class="text-[#586479] text-lg font-bold">Follow us on instagram</p>
+                        </div>
+                        <ul class="grid grid-cols-3 gap-5 mt-[30px]">
+                            <li>
+                                <a href="#"><img src="./images/insta-post-1.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-2.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-3.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-4.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-5.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-6.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-7.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com"><img src="./images/insta-post-8.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./images/insta-post-9.png" alt="insta-post"
+                                        class="rounded-lg"></a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class=" px-[7%] sm:px-[14%] md:px-[7%]">
+        <div class="bg-[#131B30] border-[#1e2b3f] border-[1px] p-[5%] rounded-[40px] my-[30px]">
+            <div class="text-[#8390a8] grid gap-5 py-[50px] md:grid-cols-3">
+                <div>
+                    <figure>
+                        <img src="./images/logo.svg" alt="">
+                    </figure>
+                    <p class="my-[20px] text-sm">When an unknown prnoto sans took a galley and scrambled it to make
+                        specimen
+                        book not only five
+                        When an unknown prnoto sans took a galley and scrambled it to five centurie.</p>
+                    <p class="text-xl font-bold text-[#d1daec] mb-1">Address</p>
+                    <address class="text-sm">
+                        <p>123 Main Street</p>
+                        <p>Ind, IN 10001</p>
+                    </address>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-[#d1daec] mb-[15px]">Categories</h1>
+                    <ul class="grid grid-cols-2 gap-3">
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Action</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Animal</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Buisness</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Dental</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Adventure</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Biology</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Canada</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Design</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">America</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Indai</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Breakfast</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-400 transition-all duration-400">Dessert</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-[#d1daec] mb-[15px]">Newsletter</h1>
+                    <p>Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+                    </p>
+                    <div class="border-b border-[#d9d7ff] relative">
+                        <input type="text" placeholder="Your name"
+                            class="bg-transparent outline-none pl-6 py-4 pr-1 w-[70%]">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="border-b border-[#d9d7ff] mt-2 relative">
+                        <input type="email" placeholder="Email address"
+                            class="bg-transparent outline-none pl-6 py-4 pr-1 w-[70%]">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <button type="button"
+                        class="text-white my-5 bg-gradient-to-r from-cyan-500 to-blue-500  rounded-md hover:from-blue-500 hover:to-cyan-500  transition-all ease-in duration-300   p-[4px_20px]  md:px-[12px] md:py-[5px]">Subscribe</button>
+                </div>
+            </div>
+            <div class="border-t border-[#1a253f] py-[40px] text-[#b4bbca] text-center">
+                <p class="mb-5"> &copy; Developed by 
+                    <a href="#" class="text-blue-400 hover:text-blue-500 transition-all duration-300 ">Surajchitara</a>
+                </p>
+                <ul class="flex flex-wrap justify-center gap-[15px]">
+                    <li class="transition-all duration-300 hover:-translate-y-1 ">
+                        <a href="#" class="hover:text-blue-400 transition-all duration-300 w-[50%] ">
+                            <i class="fa-brands fa-instagram"></i>
+                             <span class="ml-1 ">@suraj_chitara03</span>
+                             
+                        </a>
+                    </li>
+                    <li class="transition-all duration-300 hover:-translate-y-1">
+                        <a href="#" class="hover:text-blue-400 transition-all duration-300  ">
+                            <i class="fa-brands fa-twitter"></i>
+                             <span class="ml-1 ">@surajchitara</span>
+                             
+                        </a>
+                    </li>
+                    <li class="transition-all duration-300 hover:-translate-y-1">
+                        <a href="#" class="hover:text-blue-400 transition-all duration-300  ">
+                            <i class="fa-brands fa-linkedin"></i>
+                             <span class="ml-1 ">suraj-chitara</span>
+                             
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
